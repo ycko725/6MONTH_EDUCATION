@@ -1,0 +1,36 @@
+
+* { margin: 0; padding: 0; }
+
+.main-title {
+    padding: 30px;
+    text-align: center;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 30px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header ul { list-style-type: none; padding: 0; }
+header ul li  {
+    display: inline-block;
+    margin-left: 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+section {
+    width: 1024px;
+    height: 400px;
+    margin: 0 auto;
+    border: 2px dashed orange;
+}

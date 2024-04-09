@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로토타입</title>
+    <script>
+        // 프로토타입
+        // - 모든 객체가 프로토타입이라는 개체를 갖는다
+        // - 해당 객체에 상속되는 정보를 제공하는 객체
+
+        // 프로토타입 생성
+        // - 객체 생성자 함수를 정의하여 프로토타입을 생성한다
+        function Person(name, age) {
+            // this
+            // : 해당 블록을 포함하고 있는 객체
+            //   "객체 자기 자신"
+            this.name = name
+            this.age = age
+        }
+        let person = new Person('김휴먼', 20)
+
+        document.write(person.name + ', ')
+        document.write(person.age + ', ')
+        document.write('<br>')
+
+        // 객체 변수(프로퍼티) 접근
+        document.write(`이름 : ${person.name} <br>`)
+        document.write(`나이 : ${person["age"]} <br>`)
+        
+        // 객체 변수(프로퍼티) 삭제
+        // - 프로퍼티 값과 그 자체도 삭제
+        delete person.age
+        
+        document.write(`나이 : ${person["age"]} <br>`)
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

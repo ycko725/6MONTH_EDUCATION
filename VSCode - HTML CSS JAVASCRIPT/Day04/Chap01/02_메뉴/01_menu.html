@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <!-- 폰트어썸 라이브러리 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/01_menu.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="menu">
+            <a href="#" class="active">홈</a>
+            <a href="#">게시판</a>
+            <a href="#">갤러리</a>
+            <a href="#">소개</a>
+            <!-- 햄버거 버튼 -->
+            <a href="javascript:;" class="icon" onclick="menu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+    
+    <script>
+        function menu() {
+            // id 가 menu 인 요소를 가져온다
+            let nav = document.getElementById('menu')
+            if( nav.className == 'navbar' ) {
+                nav.className += ' mobile' // mobile 클래스 추가
+            } else {
+                nav.className = 'navbar'
+            }
+
+        }
+    </script>
+</body>
+</html>
